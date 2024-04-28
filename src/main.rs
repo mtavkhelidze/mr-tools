@@ -7,7 +7,7 @@ struct Cli {
     #[arg(value_name = "INPUT")]
     input: String,
 
-    /// Omit newlines
+    /// Do not print newline
     #[arg(short, action(ArgAction::SetTrue))]
     no_newlines: Option<bool>,
 
