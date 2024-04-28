@@ -3,8 +3,8 @@ use clap::{Parser, ArgAction};
 #[derive(Parser)]
 #[command(version, about, long_about = None)]
 struct Cli {
-    /// Input
-    #[arg(value_name = "TEXT")]
+    /// Input text
+    #[arg(value_name = "INPUT")]
     input: String,
 
     /// Omit newlines
