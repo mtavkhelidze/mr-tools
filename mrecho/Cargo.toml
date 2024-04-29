@@ -1,0 +1,16 @@
+[package]
+name = "mrecho"
+version = "0.1.0"
+edition = "2021"
+authors = ["Misha Tavkhelidze <misha.tavkhelidze@gmail.com>"]
+description = "Misha's echo"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
