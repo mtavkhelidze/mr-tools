@@ -1,21 +1,24 @@
-use clap::{Parser, ArgAction};
+use clap::{ArgAction, Parser};
 
-#[derive(Debug)]
-#[derive(Parser)]
+#[derive(Debug, Parser)]
 #[command(version, about, long_about = None)]
 struct Cli {
     /// Input text
     #[arg(value_name = "text", required = true)]
     strings: Vec<String>,
 
-    /// Do not print newline
+    /// Do not output final newline
     #[arg(short, action(ArgAction::SetTrue))]
-    no_newlines: Option<bool>,
-
+    no_newline: Option<bool>,
 }
 
 fn main() {
     let cli = Cli::parse();
-    let nl = if cli.no_newlines.unwrap_or(false) { "" } else { "\n" };
-    print!("{}{}", cli.strings.join(" "), nl);
+    let nl = if cli.no_newline.unwrap_or(false) {
+        ""
+    } else {
+        "\n"
+    };
+    let out = cli.strings.join(" ");
+    print!("{}{}", out, nl);
 }
