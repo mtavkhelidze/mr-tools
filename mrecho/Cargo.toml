@@ -1,10 +1,10 @@
 [package]
-name = "mrecho"
-version = "0.1.0"
-edition = "2021"
 authors = ["Misha Tavkhelidze <misha.tavkhelidze@gmail.com>"]
 description = "Misha's echo"
+edition = "2021"
 license = "MIT"
+name = "mrecho"
+version = "0.1.0"
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
