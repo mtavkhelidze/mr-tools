@@ -3,7 +3,7 @@ authors = ["misha.tavkhelidze <misha.tavkhelidze@gmail.com>"]
 description = "Misha's cat"
 edition = "2021"
 license = "MIT"
-name = "rmcat"
+name = "mrcat"
 version = "0.1.0"
 
 [dependencies]

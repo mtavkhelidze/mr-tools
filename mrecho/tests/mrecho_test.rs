@@ -1,5 +1,5 @@
 #[cfg(test)]
-mod rmecho {
+mod mrecho {
     use assert_cmd::Command;
     use predicates::str::contains;
 
