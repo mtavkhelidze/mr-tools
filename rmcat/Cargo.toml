@@ -1,9 +1,9 @@
 [package]
-name = "mrecho"
+name = "rmcat"
 version = "0.1.0"
 edition = "2021"
-authors = ["Misha Tavkhelidze <misha.tavkhelidze@gmail.com>"]
-description = "Misha's echo"
+authors = ["misha.tavkhelidze <misha.tavkhelidze@gmail.com>"]
+description = "Misha's cat"
 license = "MIT"
 
 [dependencies]
@@ -12,3 +12,4 @@ clap = { version = "4", features = ["derive"] }
 [dev-dependencies]
 assert_cmd = "2"
 predicates = "3"
+rand = "0.8"
