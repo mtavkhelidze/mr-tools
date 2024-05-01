@@ -1,3 +1,7 @@
+use mrcat;
+use mrcat::{cat, get_args};
+
 fn main() {
-    println!("Hello, world!");
+    let config = get_args().unwrap();
+    cat(&config).unwrap();
 }
