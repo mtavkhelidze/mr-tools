@@ -1,6 +1,6 @@
 [package]
 authors = ["misha.tavkhelidze <misha.tavkhelidze@gmail.com>"]
-description = "Misha's cat"
+description = "Misha's Rust Tools: Unix cat clone"
 edition = "2021"
 license = "MIT"
 name = "mrcat"
