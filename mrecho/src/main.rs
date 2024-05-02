@@ -14,7 +14,7 @@ struct Cli {
 
 fn main() {
     let cli = Cli::parse();
-    let nl = if cli.no_newline.unwrap_or(false) {
+    let nl: &str = if cli.no_newline.unwrap_or(false) {
         ""
     } else {
         "\n"
