@@ -4,7 +4,7 @@ use mrcat::lib::{cat, MRResult};
 
 fn main() {
     let config = get_args().unwrap();
-    cat(&config.file_names).unwrap();
+    cat(&config.file_names, config.number_lines.unwrap()).unwrap();
 }
 
 #[derive(Debug, Parser)]
